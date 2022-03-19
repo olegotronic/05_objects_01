@@ -32,7 +32,7 @@ class WallServiceTest {
 
         // act
         val updatedPost = Post(id = postId, text = "Updated post")
-        val result = !wallService.update(updatedPost)
+        val result = wallService.update(updatedPost)
 
         // assert
         assertTrue(result)
